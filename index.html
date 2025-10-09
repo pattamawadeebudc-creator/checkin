@@ -132,7 +132,7 @@
   <script>
     const Latitude = 16.807311070181893;  //กำหนดพื้นที่ , 
     const Longitude = 100.2642064353024;  //กำหนดพื้นที่
-    const Range = 30;  //ระยะเป็นเมตร
+    const Range = 50;  //ระยะเป็นเมตร
     
     // **แก้ไข 2: ตั้งค่า jobInput เป็น 'เข้างาน' เมื่อโหลด**
     window.onload = async function () {
@@ -306,6 +306,7 @@
               Swal.showLoading();
             },
           });
+          getCurrentTimeInBangkok();
           let spt = preview.src.split("base64,")[1];
           let obj = {
             base64: spt,
