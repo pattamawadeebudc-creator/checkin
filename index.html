@@ -306,7 +306,7 @@
               Swal.showLoading();
             },
           });
-          getCurrentTimeInBangkok();
+          document.getElementById("currentTime").value = getCurrentTimeInBangkok();
           let spt = preview.src.split("base64,")[1];
           let obj = {
             base64: spt,
